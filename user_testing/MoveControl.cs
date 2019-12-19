@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class MoveControl : MonoBehaviour
 {
-    // Update is called once per frame
-
     public float range = 5;
-    //public GUIText textOutput;
+    // public GUIText textOutput;
 
     // Update is called once per frame
     void Update()
@@ -17,6 +15,5 @@ public class MoveControl : MonoBehaviour
         float xPos = h * range;
         //float yPos = v * range;
         transform.position = new Vector3(xPos, transform.position.y, 0);
-        //textOutput.text = "Value Returned: " + h.ToString("f2");
     }
 }

@@ -8,7 +8,7 @@ public class HitWall : MonoBehaviour
     {
         GetComponent<Rigidbody>().useGravity = false;
     }
-
+    
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "wall")
@@ -25,6 +25,4 @@ public class HitWall : MonoBehaviour
             Debug.Log("Player revive");
         }
     }
-
-
 }
